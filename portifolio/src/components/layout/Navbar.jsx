@@ -4,14 +4,23 @@ export default function Navbar() {
       
       <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
 
-        {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600"></div>
-          <span className="text-lg font-bold tracking-wide text-gray-900">
-            kabe
-          </span>
+     
+      {/* Logo */}
+      <div className="flex items-center gap-2 group cursor-pointer">
+
+         {/* Code Icon */}
+        <div className="text-indigo-600 font-bold text-lg tracking-tight select-none">
+            <span className="text-indigo-500">&lt;</span>
+            <span className="text-gray-900">/</span>
+            <span className="text-indigo-500">&gt;</span>
         </div>
 
+        {/* Name */}
+        <span className="text-lg font-bold tracking-wide text-gray-900 group-hover:text-indigo-600 transition">
+            Kabe
+        </span>
+
+        </div>
         {/* Nav Links */}
         <nav>
           <ul className="flex items-center gap-6 text-sm font-medium text-gray-600">
