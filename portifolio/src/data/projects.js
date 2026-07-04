@@ -7,22 +7,22 @@ import pro2image3 from '../assets/images/Register.png'
 
 
 export const projects = [
-    {   id:"1",
-        title:"Mern Read track app ",
-        description:"Mern app app where user can track list of the book they read.full crud capability is implemented",
+    {   id:1,
+        title: "ReadTrack MERN App",
+        description:"A full-stack MERN application that allows users to track books they have read. Users can create, view, update, and delete their reading list.",
         images:[pro1image1,pro1image2,pro1image3],
         techStack:["React","Express","MongoDb","Node.js","Tailwind css"],
-        liveurl:"https://github.com",
-        githublink:"https://github.com"
+        liveurl:"",
+        githublink:"https://github.com/injifann/readtrack-mernapp"
     },
 
-        {   id:"2",
-        title:"Mern Authentication ",
-        description:"Mern app app user can creare account, login into their account.google login and registeration is implemented",
+        {id:2,
+        title: "MERN Authentication",
+        description:"A secure authentication system built with the MERN stack. Features include user registration, login, JWT authentication, and Google OAuth sign-in.",
         images:[pro2image1,pro2image2,pro2image3],
         techStack:["React","Express","MongoDb","Node.js","Tailwind css"],
-        liveurl:"https://github.com",
-        githublink:"https://github.com"
+        liverl:"",
+        githublink:"https://github.com/injifann/authentication_mern"
     }
 ]
 
