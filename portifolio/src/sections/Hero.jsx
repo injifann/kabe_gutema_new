@@ -1,5 +1,6 @@
 import React from 'react'
 import profilpic from '../assets/images/profilepic.jpg'
+import { FaDownload, FaEnvelope } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -23,22 +24,30 @@ export default function Hero() {
           </h2>
 
           <p className="text-gray-500 mb-8 max-w-md">
-            I build modern, responsive web applications using React, Node.js,express ,MongoDB and tailwindcss with a focus on performance and clean UI.
+            I build modern, responsive web applications using React, Node.js, express, MongoDB and Tailwind CSS with a focus on performance and clean UI.
           </p>
 
           {/* Buttons */}
-          
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start w-full sm:w-auto">
 
-            <a href="/cv.pdf" download className="w-full sm:w-auto text-center px-5 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition" >
-                Download CV
+            <a
+              href="/cv.pdf"
+              download
+              className="w-full sm:w-auto flex items-center justify-center gap-2 text-center px-5 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
+            >
+              <FaDownload />
+              Download CV
             </a>
 
-            <a href="#contact" className="w-full sm:w-auto text-center px-5 py-3 border border-gray-300 rounded-lg hover:bg-gray-100 transition"  >
-                Contact Me
+            <a
+              href="#contact"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 text-center px-5 py-3 border border-gray-300 rounded-lg hover:bg-gray-100 transition"
+            >
+              <FaEnvelope />
+              Contact Me
             </a>
 
-            </div>
+          </div>
         </div>
 
         {/* Right Image */}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaExternalLinkAlt, FaGithub, FaCodeBranch } from "react-icons/fa";
 
 export default function ProjectCard({ project }) {
   const [coverImage, setCoverImage] = useState(0);
@@ -7,11 +8,17 @@ export default function ProjectCard({ project }) {
     <article className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
 
       {/* Main Image */}
-      <img
-        src={project.images[coverImage]}
-        alt={`${project.title} screenshot ${coverImage + 1}`}
-        className="w-full h-56 object-cover"
-      />
+      <a
+        href={project.images?.[coverImage]}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src={project.images[coverImage]}
+          alt={`${project.title} screenshot ${coverImage + 1}`}
+          className="w-full h-72 object-cover rounded-xl cursor-pointer"
+        />
+      </a>
 
       {/* Card Content */}
       <div className="p-6">
@@ -28,7 +35,8 @@ export default function ProjectCard({ project }) {
 
         {/* Tech Stack */}
         <div className="mt-6">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-3">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-3 flex items-center gap-2">
+            <FaCodeBranch className="text-indigo-500" />
             Tech Stack
           </p>
 
@@ -73,8 +81,9 @@ export default function ProjectCard({ project }) {
               href={project.liveurl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 text-center py-3 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition"
+              className="flex-1 flex items-center justify-center gap-2 py-3 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition"
             >
+              <FaExternalLinkAlt />
               Live Demo
             </a>
           )}
@@ -83,8 +92,9 @@ export default function ProjectCard({ project }) {
             href={project.githublink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 text-center py-3 rounded-lg border border-gray-300 text-gray-700 font-semibold hover:bg-gray-100 transition"
+            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-lg border border-gray-300 text-gray-700 font-semibold hover:bg-gray-100 transition"
           >
+            <FaGithub />
             GitHub
           </a>
 
