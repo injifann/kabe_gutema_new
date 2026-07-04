@@ -4,7 +4,7 @@ import { FaDownload, FaEnvelope } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 bg-white">
+    <section id="hero"className="min-h-screen flex items-center justify-center px-6 bg-white">
 
       <div className="max-w-5xl w-full flex flex-col md:flex-row items-center justify-between gap-10">
 
