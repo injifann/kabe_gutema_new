@@ -4,6 +4,10 @@ import pro1image3 from '../assets/images/updateform.png'
 import pro2image1 from '../assets/images/Dashboard.png'
 import pro2image2 from '../assets/images/Login.png'
 import pro2image3 from '../assets/images/Register.png'
+import pro3image3 from '../assets/images/Screenshot (68).png'
+import pro3image1 from '../assets/images/Screenshot (69).png'
+import pro3image2 from '../assets/images/Screenshot (70).png'
+import pro4image4 from '../assets/images/Screenshot (71).png'
 
 
 export const projects = [
@@ -23,6 +27,24 @@ export const projects = [
         techStack:["React","Express","MongoDb","Node.js","Tailwind css"],
         liverl:"",
         githublink:"https://github.com/injifann/authentication_mern"
-    }
+    },
+     {
+    id: 3,
+    title: "Poultry E-Commerce",
+    description:
+      "A full-stack MERN e-commerce application for poultry products featuring separate user and admin interfaces. Includes product and category management, shopping cart, order processing, address management, image uploads with Cloudinary, inventory validation, and secure JWT & Google OAuth authentication.",
+    images: [pro3image1, pro3image2, pro3image3, pro4image4],
+    techStack: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS",
+      "Cloudinary"
+    ],
+    liverl: "",
+    githublink: "https://github.com/injifann/mern_poulty_ecommerce"
+}
+    
 ]
 
