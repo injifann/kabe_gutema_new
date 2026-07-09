@@ -31,7 +31,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start w-full sm:w-auto">
 
             <a
-              href="/cv.pdf"
+              href="/kabe_gutema_new/cv.pdf"
               download
               className="w-full sm:w-auto flex items-center justify-center gap-2 text-center px-5 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
             >
