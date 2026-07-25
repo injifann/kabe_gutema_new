@@ -1,19 +1,17 @@
-import React from 'react'
-import profilpic from '../assets/images/profilepic.jpg'
+import React from "react";
+import profilpic from "../assets/images/profilepic.jpg";
 import { FaDownload, FaEnvelope } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section id="hero"className="min-h-screen flex items-center justify-center px-6 bg-white">
-
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center px-6 bg-white"
+    >
       <div className="max-w-5xl w-full flex flex-col md:flex-row items-center justify-between gap-10">
-
         {/* Left Content */}
         <div className="flex-1 text-center md:text-left">
-
-          <p className="text-indigo-600 font-medium mb-2">
-            Hello, I'm
-          </p>
+          <p className="text-indigo-600 font-medium mb-2">Hello, I'm</p>
 
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Kabe Gutema
@@ -24,12 +22,13 @@ export default function Hero() {
           </h2>
 
           <p className="text-gray-500 mb-8 max-w-md">
-            I build modern, responsive web applications using React, Node.js, express, MongoDB and Tailwind CSS with a focus on performance and clean UI.
+            I build modern, responsive web applications using React, Node.js,
+            express, MongoDB and Tailwind CSS with a focus on performance and
+            clean UI.
           </p>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start w-full sm:w-auto">
-
             <a
               href="/kabe_gutema_new/cv.pdf"
               download
@@ -46,7 +45,6 @@ export default function Hero() {
               <FaEnvelope />
               Contact Me
             </a>
-
           </div>
         </div>
 
@@ -58,8 +56,7 @@ export default function Hero() {
             className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-indigo-500 shadow-lg"
           />
         </div>
-
       </div>
     </section>
-  )
+  );
 }

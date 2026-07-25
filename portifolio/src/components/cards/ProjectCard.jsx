@@ -6,7 +6,6 @@ export default function ProjectCard({ project }) {
 
   return (
     <article className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
-
       {/* Main Image */}
       <a
         href={project.images?.[coverImage]}
@@ -22,11 +21,8 @@ export default function ProjectCard({ project }) {
 
       {/* Card Content */}
       <div className="p-6">
-
         {/* Title */}
-        <h3 className="text-2xl font-bold text-gray-900">
-          {project.title}
-        </h3>
+        <h3 className="text-2xl font-bold text-gray-900">{project.title}</h3>
 
         {/* Description */}
         <p className="mt-4 text-gray-600 leading-7 line-clamp-4">
@@ -75,7 +71,6 @@ export default function ProjectCard({ project }) {
 
         {/* Buttons */}
         <div className="flex gap-3 mt-8">
-
           {project.liveurl && (
             <a
               href={project.liveurl}
@@ -97,9 +92,7 @@ export default function ProjectCard({ project }) {
             <FaGithub />
             GitHub
           </a>
-
         </div>
-
       </div>
     </article>
   );

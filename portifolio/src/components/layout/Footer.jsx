@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaTelegram,
-  FaArrowUp,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTelegram, FaArrowUp } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
 export default function Footer() {
@@ -13,7 +8,6 @@ export default function Footer() {
   return (
     <footer className="border-t border-gray-200 mt-20">
       <div className="max-w-6xl mx-auto px-6 py-10">
-
         {/* Brand */}
         <div className="text-center">
           <h2 className="text-2xl font-bold">
@@ -27,7 +21,6 @@ export default function Footer() {
 
         {/* Socials */}
         <div className="flex justify-center gap-6 mt-8 text-2xl">
-
           <a
             href="https://github.com/injifann"
             target="_blank"
@@ -61,15 +54,11 @@ export default function Footer() {
           >
             <FiMail />
           </a>
-
         </div>
 
         {/* Bottom */}
         <div className="mt-10 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500 gap-4">
-
-          <p>
-            © {currentYear} Kabe Gutema. All rights reserved.
-          </p>
+          <p>© {currentYear} Kabe Gutema. All rights reserved.</p>
 
           <a
             href="#hero"
@@ -78,9 +67,7 @@ export default function Footer() {
             Back to Top
             <FaArrowUp />
           </a>
-
         </div>
-
       </div>
     </footer>
   );

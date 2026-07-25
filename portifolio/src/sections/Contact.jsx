@@ -4,7 +4,6 @@ import { FaTelegram, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import toast from "react-hot-toast";
 
 export default function Contact() {
-
   const email = "kabegutema4@gmail.com";
   const phone = "+251990349039";
   const telegram = "@kabe_g";
@@ -18,7 +17,6 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-24 px-6 bg-white relative">
-
       {/* Floating Hire Me Button */}
       <a
         href="#contact"
@@ -29,9 +27,7 @@ export default function Contact() {
 
       {/* Header */}
       <div className="text-center mb-10">
-        <h2 className="text-4xl font-bold text-gray-900">
-          Contact Me
-        </h2>
+        <h2 className="text-4xl font-bold text-gray-900">Contact Me</h2>
 
         <p className="text-gray-500 mt-2">
           I am open to work and collaborations
@@ -45,7 +41,6 @@ export default function Contact() {
 
       {/* Grid */}
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-
         {/* Direct Contact */}
         <div className="border rounded-2xl p-6 shadow-sm hover:shadow-lg transition bg-gray-50">
           <h3 className="text-lg font-semibold mb-6 text-gray-800">
@@ -53,7 +48,6 @@ export default function Contact() {
           </h3>
 
           <div className="space-y-4">
-
             {/* EMAIL */}
             <div className="flex items-center justify-between">
               <div
@@ -129,7 +123,6 @@ export default function Contact() {
                 Chat
               </a>
             </div>
-
           </div>
         </div>
 
@@ -140,7 +133,6 @@ export default function Contact() {
           </h3>
 
           <div className="space-y-4">
-
             <a
               href="https://github.com/injifann"
               target="_blank"
@@ -158,10 +150,8 @@ export default function Contact() {
             >
               <FaLinkedin /> LinkedIn
             </a>
-
           </div>
         </div>
-
       </div>
     </section>
   );

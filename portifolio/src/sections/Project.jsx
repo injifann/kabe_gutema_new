@@ -5,13 +5,9 @@ import { FaFolderOpen, FaCode } from "react-icons/fa";
 
 export default function Project() {
   return (
-    <section
-      id="projects"
-      className="max-w-6xl mx-auto px-6 py-24"
-    >
+    <section id="projects" className="max-w-6xl mx-auto px-6 py-24">
       {/* Header */}
       <div className="text-center mb-14">
-
         <div className="flex items-center justify-center gap-2 text-indigo-600 font-semibold tracking-wide uppercase">
           <FaFolderOpen />
           <span>Portfolio</span>

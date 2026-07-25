@@ -1,25 +1,20 @@
 export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
-      
       <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-
-     
-      {/* Logo */}
-      <div className="flex items-center gap-2 group cursor-pointer">
-
-         {/* Code Icon */}
-        <div className="text-indigo-600 font-bold text-lg tracking-tight select-none">
+        {/* Logo */}
+        <div className="flex items-center gap-2 group cursor-pointer">
+          {/* Code Icon */}
+          <div className="text-indigo-600 font-bold text-lg tracking-tight select-none">
             <span className="text-indigo-500">&lt;</span>
             <span className="text-gray-900">/</span>
             <span className="text-indigo-500">&gt;</span>
-        </div>
+          </div>
 
-        {/* Name */}
-        <span className="text-lg font-bold tracking-wide text-gray-900 group-hover:text-indigo-600 transition">
+          {/* Name */}
+          <span className="text-lg font-bold tracking-wide text-gray-900 group-hover:text-indigo-600 transition">
             Kabe
-        </span>
-
+          </span>
         </div>
         {/* Nav Links */}
         <nav>
@@ -49,7 +44,6 @@ export default function Navbar() {
             </li>
           </ul>
         </nav>
-
       </div>
     </header>
   );
